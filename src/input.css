@@ -1,1 +1,21 @@
-@import "tailwindcss"
+@import "tailwindcss" ;
+@layer components {
+	.hover-sidebar {
+		@apply  space-x-3.5
+            items-center
+          hover:bg-zinc-500/20
+            h-10 
+            w-32
+            px-2
+            py-1
+            rounded-full 
+            transition-colors duration-200;
+	}
+  .icon-hover{
+@apply inline-block
+ hover:bg-[#1D9BF0]/20
+  transition-colors duration-200
+   rounded-full
+    p-1.5;
+  }
+}
