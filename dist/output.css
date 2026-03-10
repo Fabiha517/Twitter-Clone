@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -27,7 +27,9 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-light: 300;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --leading-tight: 1.25;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
@@ -245,11 +247,29 @@
   .hidden {
     display: none;
   }
+<<<<<<< HEAD
+=======
+  .table {
+    display: table;
+  }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
+>>>>>>> d522bf882ad6a9117f231d2d65d325b104be2391
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
   }
   .h-7 {
     height: calc(var(--spacing) * 7);
@@ -266,8 +286,8 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
-  .h-\[28\%\] {
-    height: 28%;
+  .h-\[31\] {
+    height: 31;
   }
   .h-\[40px\] {
     height: 40px;
@@ -277,6 +297,9 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .min-h-fit {
+    min-height: fit-content;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -344,6 +367,37 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
+<<<<<<< HEAD
+=======
+  .space-y-0 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-1 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-1\.5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 1.5) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 1.5) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+>>>>>>> d522bf882ad6a9117f231d2d65d325b104be2391
   .space-y-4 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -380,6 +434,9 @@
   }
   .rounded-\[7px\] {
     border-radius: 7px;
+  }
+  .rounded-\[9px\] {
+    border-radius: 9px;
   }
   .rounded-\[50px\] {
     border-radius: 50px;
@@ -451,6 +508,12 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+<<<<<<< HEAD
+=======
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+>>>>>>> d522bf882ad6a9117f231d2d65d325b104be2391
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -463,24 +526,54 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
   .pr-1 {
     padding-right: calc(var(--spacing) * 1);
   }
+<<<<<<< HEAD
+=======
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
+  .pr-3 {
+    padding-right: calc(var(--spacing) * 3);
+  }
+>>>>>>> d522bf882ad6a9117f231d2d65d325b104be2391
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
   }
   .pr-4\.5 {
     padding-right: calc(var(--spacing) * 4.5);
   }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pl-0 {
+    padding-left: calc(var(--spacing) * 0);
   }
   .pl-1 {
     padding-left: calc(var(--spacing) * 1);
   }
+<<<<<<< HEAD
+=======
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
+  }
+>>>>>>> d522bf882ad6a9117f231d2d65d325b104be2391
   .pl-4\.5 {
     padding-left: calc(var(--spacing) * 4.5);
   }
@@ -502,11 +595,35 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
+<<<<<<< HEAD
   .text-\[12px\] {
     font-size: 12px;
   }
+=======
+  .text-\[1px\] {
+    font-size: 1px;
+  }
+  .text-\[9px\] {
+    font-size: 9px;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[12px\] {
+    font-size: 12px;
+  }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+>>>>>>> d522bf882ad6a9117f231d2d65d325b104be2391
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[17px\] {
+    font-size: 17px;
   }
   .text-\[18px\] {
     font-size: 18px;
@@ -524,6 +641,10 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
@@ -532,8 +653,15 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .text-\[\#1D9BF0\] {
     color: #1D9BF0;
+  }
+  .text-\[px\] {
+    color: px;
   }
   .text-\[rgba\(97\,202\,119\,1\)\] {
     color: rgba(97,202,119,1);
@@ -552,6 +680,36 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .text-white\/0 {
+    color: color-mix(in srgb, #fff 0%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 0%, transparent);
+    }
+  }
+  .text-white\/15 {
+    color: color-mix(in srgb, #fff 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 15%, transparent);
+    }
+  }
+  .text-white\/20 {
+    color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .text-white\/30 {
+    color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .text-white\/40 {
+    color: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
   }
   .text-zinc-900 {
     color: var(--color-zinc-900);
